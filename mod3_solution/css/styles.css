@@ -1,0 +1,40 @@
+#nav {
+  background-color: #CC6600;
+  border-radius: 0;
+  border: 0;
+}
+#name{
+  color: #ffffff;
+}
+#toggler{
+  background-color:#FFBC79; 
+
+}
+#toggler:hover{
+  background-color: #f2f4f3;
+}
+#menu{
+  border:none;
+}
+#menu a{
+  color:#ffffff;
+}
+#menu a:hover,#menu a:active{
+  font-weight: bold;
+  font-size: 1.2em;
+  background-color:#FFBC79;
+  color:#502800;
+}
+.menu_item{
+  background-color: #FFE0D1;
+  padding: 30px;
+  margin:10px;
+  margin-bottom: 20px;
+
+}
+
+.menu_item a.anchor_header{
+  color:#000000;
+  text-decoration: none;
+}
+
