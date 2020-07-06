@@ -18,6 +18,8 @@
 }
 #menu a{
   color:#ffffff;
+  text-align: center;
+
 }
 #menu a:hover,#menu a:active{
   font-weight: bold;
