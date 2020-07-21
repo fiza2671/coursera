@@ -31,6 +31,25 @@
 			background-color: #4D4D4D;
 			
 		}
+		#toggler{
+ 			 background-color:#4D4D4D; 
+ 			 border:none;
+ 			 font-family: Times New Roman;
+ 			 font-size: 1em;
+
+
+
+}
+		#toggler:hover{
+  			background-color: #f2f4f3;
+  			font-size: 1.2em;
+  			color:red;
+  			font-weight:bold;
+  		}
+  		#toggler:active{
+  			background-color: black;
+  			color: white;
+  		}
 		@media (max-width: 991px) and (min-width: 768px){
 	.col-md-6{
 		width:50%;
@@ -40,7 +59,7 @@
 @media (max-width: 767px){
 	.col-sm-12{
 		width:100%;
-}
+	}
 }
 
 	</style>
@@ -48,10 +67,10 @@
 <body>
 <h1 >CALCULATOR</h1>
 <table align="center" class="col-md-6 col-sm-12">
-<tr><td><button onclick="add()">ADD</button></td></tr>
-<tr><td><button onclick="sub()">SUBTRACT</button></td></tr>
-<tr><td><button onclick="mul()">MULTIPLY</button></td></tr>
-<tr><td><button onclick="div()">DIVIDE</button></td></tr>
+<tr><td><button id="toggler" onclick="add()">ADD</button></td></tr>
+<tr><td><button  id="toggler"onclick="sub()">SUBTRACT</button></td></tr>
+<tr><td><button id="toggler"onclick="mul()">MULTIPLY</button></td></tr>
+<tr><td><button id="toggler"onclick="div()">DIVIDE</button></td></tr>
 </table>
 <script type="text/javascript">
 	function add() {
