@@ -31,13 +31,23 @@
 			background-color: #4D4D4D;
 			
 		}
-
+		@media (max-width: 991px) and (min-width: 768px){
+	.col-md-6{
+		width:50%;
+		
+	}
+}
+@media (max-width: 767px){
+	.col-sm-12{
+		width:100%;
+}
+}
 
 	</style>
 </head>
 <body>
 <h1 >CALCULATOR</h1>
-<table align="center" >
+<table align="center" class="col-md-6 col-sm-12">
 <tr><td><button onclick="add()">ADD</button></td></tr>
 <tr><td><button onclick="sub()">SUBTRACT</button></td></tr>
 <tr><td><button onclick="mul()">MULTIPLY</button></td></tr>
