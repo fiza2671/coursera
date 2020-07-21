@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		h1{
+		font-size: :1.5em;
+		font-family:Ariel;
+		color:white;
+		text-align:center;
+	
+		}
+		body{ 
+			
+			background-color:gray;
+
+		}
+		table{
+			width:50%;
+
+		}
+		table,td{
+			padding:5px;
+			border: 2px solid black;
+			border-spacing: 5px;
+			
+
+		}
+		td{
+			text-align:  center;
+			background-color: #4D4D4D;
+			
+		}
+
+
+	</style>
+</head>
+<body>
+<h1 >CALCULATOR</h1>
+<table align="center" >
+<tr><td><button onclick="add()">ADD</button></td></tr>
+<tr><td><button onclick="sub()">SUBTRACT</button></td></tr>
+<tr><td><button onclick="mul()">MULTIPLY</button></td></tr>
+<tr><td><button onclick="div()">DIVIDE</button></td></tr>
+</table>
+<script type="text/javascript">
+	function add() {
+		var a,b;
+		a=Number(prompt("Enter first number"));
+		b=Number(prompt("Enter next number"));
+		alert(a+b);
+	}
+	function sub() {
+		var a,b;
+		a=Number(prompt("Enter first number"));
+		b=Number(prompt("Enter next number"));
+		alert(a-b);
+	}
+	function mul() {
+		var a,b;
+		a=Number(prompt("Enter first number"));
+		b=Number(prompt("Enter next number"));
+		alert(a*b);
+	}
+	function div() {
+		var a,b;
+		a=Number(prompt("Enter first number"));
+		b=Number(prompt("Enter next number"));
+		alert(a/b);
+	}
+</script>
+</body>
+</html>
