@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>loop</title>
+</head>
+<body align="center">
+	<button onclick="w()">WHILE</button>
+	<button onclick="f()">FOR</button>
+	<button onclick="dw()">DO_WHILE</button>
+	<p id="head"></p>
+	<p id="demo"></p>
+<script type="text/javascript">
+	function w() {
+		document.getElementById("head").innerHTML="<h1>WHILE LOOP</h1>"
+		var i=1,txt="";
+		while(i<100){
+			txt=txt+i+"<br>";
+			i=i+2;
+		}
+		document.getElementById("demo").innerHTML=txt;
+	}
+	function f() {
+		document.getElementById("head").innerHTML="<h1>FOR LOOP</h1>"
+		var txt="";
+		for(var i=1;i<100;i+=2){
+			txt=txt+i+"<br>";
+
+		}
+		document.getElementById('demo').innerHTML=txt;
+	}
+	function dw() {
+		document.getElementById("head").innerHTML="<h1>DO...WHILE LOOP</h1>"
+		var i=1,txt="";
+		do{
+		txt=txt+i+"<br>";
+		i+=2;
+		}while(i<100);
+		document.getElementById('demo').innerHTML=txt;
+	}
+	
+</script>
+</body>
+</html>
