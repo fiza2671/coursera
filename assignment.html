@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ASSIGNMENT</title>
+	<style type="text/css">
+		table{
+			background-color: #323233;
+			border:2px solid black;
+			  border-radius: 10px;
+			  padding: 2%;
+			  box-shadow: 8px 10px 12px rgba(118,118,120,0.5);
+			  position: absolute;
+			  top: 50%;
+			  left: 50%;
+			  transform: translate(-50%, -50%)
+					}
+			th,td{
+				border:5px solid transparent;
+				padding: 5%;
+			}
+			td{
+			text-align:  center;
+			background-color: #4D4D4D;
+			
+		}
+		th{
+			background-color: #CC9900;
+			font-weight: bold;
+			font-size: 1.1em;
+			font-family: Times New Roman,sans-serif;
+		}
+		#toggler{
+ 			 background-color:#4D4D4D; 
+ 			 border:none;
+ 			 font-size: 1em;
+
+
+
+}
+		#toggler:hover{
+  			background-color:#CC9900; 
+  			font-size: 1.2em;
+  			font-weight:bold;
+  		}
+  		#toggler:active{
+  			background-color: black;
+  			color: white;
+  		}
+		@media (max-width: 991px) and (min-width: 768px){
+	.col-md-6{
+		width:50%;
+		
+	}
+}
+@media (max-width: 767px){
+	.col-sm-12{
+		width:100%;
+	</style>
+</head>
+<body align="center">
+	<table >
+		<tr><th colspan="2">FIND THE AREA AND PERIMETER OF</th></tr>
+		<tr><td><button id="toggler"onclick="circle()">Circle</button></td>
+		<td><button id="toggler"onclick="rectangle()">Rectangle</button></td></tr>
+		<tr><th colspan="2">PRIME NUMBERS UPTO</th></tr>
+		<tr><td colspan="2"><button  id="toggler"onclick="prime()">given number</button></td></tr>
+	</table>
+	<script type="text/javascript">
+		function circle() {
+			var r;
+			r=Number(prompt("Enter the radius of circle:","Radius of circle"));
+			alert("The perimeter of the circle of radius "+r+" is "+2*3.14*r);
+			alert("The area of the circle of radius "+r+" is "+3.14*r*r);
+		}
+		function rectangle() {
+			var l,b;
+			l=Number(prompt("Enter the length of rectangle:","Length"));
+			b=Number(prompt("Enter the breadth of rectangle:","breadth"));
+			var p=2*(l+b);
+			alert("The perimeter of the rectangle of length "+l+" and "+"breadth "+b+" is "+p);
+			alert("The area of the rectangle of length "+l+" and "+"breadth "+b+" is "+l*b);
+		}
+		function prime() {
+			var n=Number(prompt("Enter the limit:"));
+			var result = "Prime Numbers upto "+n+" are:>";
+             for(var i=2;i<n;i++){
+               result+=(function (i){
+                 for(var j=2;j<=i/2;j++)
+                 if(i%j==0)
+                 return "";
+                 return i+",";
+               })(i);
+             }
+            alert(result);
+           }
+		
+		
+	</script>
+</body>
+</html>
